@@ -19,8 +19,13 @@ class APILogic{
          user=new User(userName,false);
     }
        collection.push(user);
+       if(localStorage.getItem('collection')){
+       localStorage.removeItem('collection');
+       }
+       localStorage.setItem('collection',JSON.stringify(collection))
       // console.log(collection);
        //functon that displays collection of users
+       
        Display.displayColection(collection);
   })
     }
