@@ -27,6 +27,9 @@ class APILogic{
        //functon that displays collection of users
        
        Display.displayColection(collection);
+       document.querySelectorAll('li div').forEach(e=>{
+        Logic.cssLiveFt(e);
+       })
   })
     }
   }
