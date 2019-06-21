@@ -1,3 +1,4 @@
+/* variables for styles*/
 :root{
     --red-Color:#ca3e47;
     --background-Color:#525252;
@@ -39,6 +40,7 @@ li div{
     background-color: #ca3e47;
     display: inline-block;
     font-size: 0;
+    margin-right: 35%;
 }
 form{
     width: 65%;
@@ -50,6 +52,10 @@ form{
 form label,form input,form button{
     display: block;
     margin: 0 auto;
+    color: white;
+}
+form input{
+    color: black;
 }
 form input{
     margin-top: 1rem;
