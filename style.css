@@ -1,12 +1,15 @@
 /* variables for styles*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 :root{
     --red-Color:#ca3e47;
     --background-Color:#525252;
     --ul-Color:#313131;
+    --font:'Roboto';
 }
 body{
     background-color: var(--background-Color);
     color: white;
+    font-family: var(--font);
 }
 nav{
     background-color: var(--red-Color);
@@ -27,6 +30,7 @@ li{
     background-color: var(--ul-Color);
     margin-bottom: .4rem;
     padding:.8rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: space-between;
 }

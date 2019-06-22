@@ -13,11 +13,14 @@ class APILogic{
   }).then(data=>{
       let user="";
       // console.log(data.data[0].type);
+      //path to viewcount
+      //console.log(data.data[0].viewer_count);
        if(data.data[0]){
-         user=new User(userName,true);
+         user=new User(userName,true,data.data[0].viewer_count);
     }else{
-         user=new User(userName,false);
+         user=new User(userName,false,0);
     }
+    console.log(user);
        collection.push(user);
        if(localStorage.getItem('collection')){
        localStorage.removeItem('collection');
