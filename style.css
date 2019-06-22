@@ -1,8 +1,8 @@
 /* variables for styles*/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 :root{
-    --red-Color:#ca3e47;
-    --background-Color:#525252;
+    --red-Color:#fc4444;
+    --background-Color:#eae8dc;
     --ul-Color:#313131;
     --font:'Roboto';
 }
@@ -33,6 +33,7 @@ li{
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
+    border: 4px solid var(--red-Color);
 }
 li span{
     margin-left: 46%;
@@ -41,7 +42,7 @@ li div{
     width:25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #ca3e47;
+    background-color: var(--red-Color);
     display: inline-block;
     font-size: 0;
     margin-right: 35%;
@@ -51,7 +52,7 @@ form{
     margin: 0 auto;
     text-align: center;
     border: 4px solid var(--red-Color);
-    background-color: #414141;
+    background-color: var(--ul-Color);
 }
 form label,form input,form button{
     display: block;

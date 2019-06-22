@@ -1,7 +1,7 @@
 class Logic{
     static cssLiveFt(e){
       if(e.textContent=='true'){
-        e.style.backgroundColor='green';
+        e.style.backgroundColor='#85bb65';
       }
     }
   }
