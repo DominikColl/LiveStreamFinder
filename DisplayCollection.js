@@ -1,9 +1,10 @@
 class Display{
     static displayColection(collection){
         //collection is array of users
+        //target blank to that the link opens in new tab
         let html=``;
         collection.forEach(user => {
-        html+=`<li><span><a href="${Logic.createURL(user.name)}">${user.name}</a></span> ${user.viewCount}<div>${user.live}</div></li>`;
+        html+=`<li><span><a href="${Logic.createURL(user.name)}"target="_blank">${user.name}</a></span> ${user.viewCount}<div>${user.live}</div></li>`;
             
         });
         document.querySelector('ul').innerHTML=html;
