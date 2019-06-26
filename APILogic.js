@@ -12,20 +12,18 @@ class APILogic{
    }
   }).then(data=>{
       let user="";
-      // console.log(data.data[0].type);
        if(data.data[0]){
-         user=new User(userName,true);
+         user=new User(userName,true,data.data[0].viewer_count);
     }else{
-         user=new User(userName,false);
+         user=new User(userName,false,0);
     }
+    console.log(user);
        collection.push(user);
+       //all local storage
        if(localStorage.getItem('collection')){
        localStorage.removeItem('collection');
        }
        localStorage.setItem('collection',JSON.stringify(collection))
-      // console.log(collection);
-       //functon that displays collection of users
-       
        Display.displayColection(collection);
        document.querySelectorAll('li div').forEach(e=>{
         Logic.cssLiveFt(e);

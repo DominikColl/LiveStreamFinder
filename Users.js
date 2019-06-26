@@ -1,6 +1,7 @@
 class User{
-    constructor(name,live){
+    constructor(name,live,viewerCount){
         this.name=name;
         this.live=live;
+        this.viewCount=viewerCount;
     }
 }
