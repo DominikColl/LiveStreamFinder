@@ -1,3 +1,4 @@
+let collection=[];
 class Logic{
     static cssLiveFt(e){
       if(e.textContent=='true'){
@@ -8,5 +9,10 @@ class Logic{
     //creates link to users live stream
     static createURL(username){
       return `https://www.twitch.tv/${username}`;
+    }
+    static deleteLocalStorageEvent(){
+      localStorage.removeItem('collection');
+      collection=[];
+      Display.displayColection(collection);
     }
   }
