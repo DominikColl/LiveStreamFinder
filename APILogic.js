@@ -30,4 +30,21 @@ class APILogic{
        })
   })
     }
+    //gets top games being streamed right now
+    static getTopGamesData(){
+        let url=`https://api.twitch.tv/helix/games/top`;
+        const config={
+            method:'GET',
+            headers:{'Client-ID': '50o012g5mqw744u2gun9larsd3cj05'}
+        }
+        fetch(url,config)
+        .then(r =>{
+         if(r.ok){
+           //gives top games being streamed
+           return r.json()
+         }
+        }).then(e=>{
+          console.log(e)
+        })
+    }
   }

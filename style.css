@@ -16,11 +16,13 @@ body{
 }
 nav{
     background-color: var(--red-Color);
-    padding:1.3rem;
     margin-bottom: 3rem;
 }
+
 h1{
-    margin-left: 16.5%;
+    margin-left: 17.5%;
+    display: inline-block;
+    /* margin-right: 20%; */
 }
 ul{
     width:65%;
@@ -125,7 +127,29 @@ form button{
 form label{
     margin-top: 1rem;
 }
-
+nav li{
+    border: none;
+    background-color: var(--red-Color);
+    display: inline-block;
+   margin-right: 4.1%;
+}
+nav li:hover{
+    /*change color*/
+    color: grey;
+}
+nav ul{
+    display: inline-block;
+    text-align: right;
+}
+footer img{
+    width:45px;
+    height: 45px;
+    margin-left: 48.5%;
+  
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+}
 /* for chrome autofill defaults look ugly */
  input:-webkit-autofill,
 input:-webkit-autofill:hover, 

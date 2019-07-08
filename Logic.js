@@ -1,3 +1,4 @@
+//needs sorting method to make live appear before offline in array
 let collection=[];
 class Logic{
     static cssLiveFt(e){

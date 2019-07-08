@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded',()=>{
+  APILogic.getTopGamesData();
   //let t=localStorage.getItem('collection')
   if(localStorage.getItem('collection')){
     let t=localStorage.getItem('collection')

@@ -7,6 +7,9 @@ class Display{
         html+=`<li><span><a href="${Logic.createURL(user.name)}"target="_blank">${user.name}</a></span> ${user.viewCount}<div>${user.live}</div></li>`;
             
         });
-        document.querySelector('ul').innerHTML=html;
+        document.querySelector('#insertList').innerHTML=html;
+    }
+    static displayGames(games){
+
     }
 }
