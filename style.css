@@ -114,8 +114,9 @@ form input:hover,input:focus{
     background: var(--ul-ColorHover);
 }
 form button{
+    transition: transform .5s linear;
     background-color: var(--ul-Color);
-    border: 2px solid var(--red-Color);
+    /* border: 2px solid var(--red-Color); */
     margin-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
